@@ -1,0 +1,45 @@
+{
+  "name": "ssrwpo.github.io",
+  "version": "1.0.0",
+  "description": "SSR &amp; WPO packages for Node &amp; Meteor",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssrwpo/ssrwpo.github.io.git"
+  },
+  "author": "Pierre-Eric Marchandet <pemarchandet@gmail.com> (http://pem-musing.blogspot.fr/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssrwpo/ssrwpo.github.io/issues"
+  },
+  "homepage": "https://github.com/ssrwpo/ssrwpo.github.io#readme",
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  },
+  "dependencies": {
+    "front-matter": "^2.1.1",
+    "gatsby": "^0.12.20",
+    "highlight.js": "^9.8.0",
+    "history": "^2.0.2",
+    "js-yaml": "^3.7.0",
+    "markdown-it": "^7.0.1",
+    "markdown-it-abbr": "^1.0.3",
+    "markdown-it-attrs": "^0.6.3",
+    "markdown-it-deflist": "^2.0.1",
+    "markdown-it-footnote": "^3.0.1",
+    "markdown-it-sub": "^1.0.0",
+    "object-assign": "^4.1.0",
+    "react-headroom": "^2.1.2",
+    "react-helmet": "^3.2.2",
+    "react-responsive-grid": "^0.3.3",
+    "react-typography": "^0.15.0",
+    "toml-js": "0.0.8",
+    "typography": "^0.15.0",
+    "typography-plugin-code": "^0.15.0"
+  }
+}
