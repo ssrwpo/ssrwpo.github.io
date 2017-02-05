@@ -1,2 +1,11 @@
-siteTitle="SSRWPO - Server Side Rendering Web Performance Optimization"
+siteTitle="SSRWPO"
+baseColor = "#2e2d2d"
 linkPrefix = "/gatsby-starter-default"
+docPages = [
+  "/",
+  "/docs/",
+  "/docs/getting-started/",
+  "/docs/how-to-run/",
+  "/docs/the-next-step/",
+  "/docs/conclusion/",
+]
