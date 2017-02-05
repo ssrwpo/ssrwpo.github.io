@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-**SSRWPO** - Server Side Rendering with With Performance Optimization.
+**SSRWPO** - Server Side Rendering with Web Performance Optimization.
 
 SSRWPO is a [Meteor](https://www.meteor.com) package for which adds a number of extremely desirable features:
 
