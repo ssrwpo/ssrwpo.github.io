@@ -20,7 +20,7 @@ This is essentially what happens:
 3. The application is rendered on the server using the Redux store that was prepared previously. We just call
    React's `renderToString` on something similar to this (where `StaticRouter` is provided by React Router 4):
 
-   ````javascript
+   ````js
    <Provider store={store}>
      <StaticRouter location={url} context={routerContext}>
        <MainApp />
@@ -60,7 +60,7 @@ functions to do exactly this: `createHandleSubscribe` and `createHandleSyncViaMe
 Here's and example where we create a function to start subscribing to a publication. Note how we do this in the
 `connect`:
 
-````javascript
+````js
 export default connect(
   state => ({
     buildDate: state.buildDate,
