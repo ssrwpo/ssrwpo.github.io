@@ -10,7 +10,7 @@ or any other deep magic.
 
 This is essentially what happens:
 
-1. SSRWPO uses Express to create web server, and serves your Meteor application from `/`.
+1. **SSR** uses Express to create web server, and serves your Meteor application from `/`.
 
 2. Before rendering your application on the server, we traverse your React hierarchy
    so that you can prepare the Redux store with any data you'll need to render the route.

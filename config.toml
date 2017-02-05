@@ -4,6 +4,7 @@ linkPrefix = "/"
 docPages = [
   "/",
   "/ssr/",
+  "/ssr/description/",
   "/ssr/the-big-picture/",
   "/ssr/SSR/",
   "/uglifyjs2/",
