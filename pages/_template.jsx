@@ -14,6 +14,26 @@ import 'css/github.css'
 
 const { rhythm, adjustFontSizeTo } = typography
 
+const NavLink = ({ active, href, name }) => (
+  <Link
+    to={prefixLink(href)}
+    style={{
+      background: active ? activeColors.bg : colors.bg,
+      color: active ? activeColors.fg : colors.fg,
+      float: 'right',
+      textDecoration: 'none',
+      paddingLeft: rhythm(1/2),
+      paddingRight: rhythm(1/2),
+      paddingBottom: rhythm(3/4),
+      marginBottom: rhythm(-1),
+      paddingTop: rhythm(1),
+      marginTop: rhythm(-1),
+    }}
+  >
+    {name}
+  </Link>
+);
+
 module.exports = React.createClass({
   propTypes () {
     return {
@@ -21,9 +41,6 @@ module.exports = React.createClass({
     }
   },
   render () {
-    const docsActive = includes(this.props.location.pathname, '/docs/')
-    const examplesActive = includes(this.props.location.pathname, '/examples/')
-
     return (
       <div>
         <div
@@ -46,7 +63,7 @@ module.exports = React.createClass({
               }}
             >
               <Span
-                columns={4}
+                columns={8}
                 style={{
                   height: 24, // Ugly hack. How better to constrain height of div?
                 }}
@@ -62,24 +79,17 @@ module.exports = React.createClass({
                   {config.siteTitle}
                 </Link>
               </Span>
-              <Span columns={8} last>
-                <Link
-                  to={prefixLink('/docs/')}
-                  style={{
-                    background: docsActive ? activeColors.bg : colors.bg,
-                    color: docsActive ? activeColors.fg : colors.fg,
-                    float: 'right',
-                    textDecoration: 'none',
-                    paddingLeft: rhythm(1/2),
-                    paddingRight: rhythm(1/2),
-                    paddingBottom: rhythm(3/4),
-                    marginBottom: rhythm(-1),
-                    paddingTop: rhythm(1),
-                    marginTop: rhythm(-1),
-                  }}
-                >
-                  Documentation
-                </Link>
+              <Span columns={2}>
+                <NavLink
+                  active={includes(this.props.location.pathname, '/ssr/')}
+                  href="/ssr/" name="SSR"
+                />
+              </Span>
+              <Span columns={2} last>
+                <NavLink
+                  active={includes(this.props.location.pathname, '/uglifyjs2/')}
+                  href="/uglifyjs2/" name="UglifyJS2"
+                />
               </Span>
             </Grid>
           </Container>

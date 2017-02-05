@@ -3,7 +3,8 @@ baseColor = "#2e2d2d"
 linkPrefix = "/"
 docPages = [
   "/",
-  "/docs/",
-  "/docs/the-big-picture/",
-  "/docs/SSR/",
+  "/ssr/",
+  "/ssr/the-big-picture/",
+  "/ssr/SSR/",
+  "/uglifyjs2/",
 ]
