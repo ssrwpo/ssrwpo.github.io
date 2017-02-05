@@ -8,4 +8,7 @@ docPages = [
   "/ssr/the-big-picture/",
   "/ssr/SSR/",
   "/uglifyjs2/",
+  "/uglifyjs2/description/",
+  "/uglifyjs2/configuration/",
+  "/uglifyjs2/others/",
 ]
