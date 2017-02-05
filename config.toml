@@ -1,11 +1,9 @@
 siteTitle="SSRWPO"
 baseColor = "#2e2d2d"
-linkPrefix = "/gatsby-starter-default"
+linkPrefix = "/"
 docPages = [
   "/",
   "/docs/",
-  "/docs/getting-started/",
-  "/docs/how-to-run/",
-  "/docs/the-next-step/",
-  "/docs/conclusion/",
+  "/docs/under-the-hood/",
+  "/docs/SSR/",
 ]

@@ -2,32 +2,22 @@
 title: Introduction
 ---
 
-**SSRWPO** stands for Server Side Rendering Web Performance Optimization.
+**SSRWPO** - Server Side Rendering with With Performance Optimization.
 
-```javascript
-import Typography from 'typography'
-import CodePlugin from 'typography-plugin-code'
+SSRWPO is a [Meteor](https://www.meteor.com) package for which adds a number of extremely desirable features:
 
-const options = {
-  baseFontSize: '16px',
-  baseLineHeight: 1.5,
-  bodyFontFamily: ['Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-  headerFontFamily: ['Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-  bodyWeight: 400,
-  headerWeight: 700,
-  boldWeight: 700,
-  scale: 1.618,
-  plugins: [
-    new CodePlugin(),
-  ],
-}
+* Server Side Rendering with a true TTL cache
+* Data injection for the initial render on client
+* Server-side routes and webhooks
+* A Redux layer over Meteor publications to provide reactively as and when required
+* Internationalisation
+* Server-side redirects and 404 handing
+* Support for Sitemaps and robots.txt files
 
-const typography = new Typography(options)
+Unlike existing solutions, SSRWPO doesn't monkey patch Meteor to provide this functionality. Instead,
+SSRWPO is based around a set of standard web technologies:
 
-// Hot reload typography in development.
-if (process.env.NODE_ENV !== 'production') {
-  typography.injectStyles()
-}
-
-export default typography
-```
+* An Express Server
+* React
+* React-Router 4
+* Redux
