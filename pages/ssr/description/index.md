@@ -2,7 +2,7 @@
 title: Description
 ---
 
-**SSR** is a [Meteor](https://www.meteor.com) package for which adds a number of extremely desirable features:
+**SSR** is a [Meteor](https://www.meteor.com) package which adds a number of extremely desirable features:
 
 * Server Side Rendering with a true TTL cache
 * Data injection for the initial render on client

@@ -5,7 +5,7 @@ title: The Big Picture
 SSRWPO's solution to server-side rendering using Meteor is opinionated about the technologies
 used to build your web app, relying on [Express](http://expressjs.com), [React](https://facebook.github.io/react/),
 [Redux](http://redux.js.org) and [React Router 4](https://reacttraining.com/react-router/). This allows
-us to solve problem in an elegant and understandable way that doesn't involved monkey-patching Meteor
+us to solve the problem in an elegant and understandable way that doesn't involved monkey-patching Meteor
 or any other deep magic.
 
 This is essentially what happens:
@@ -55,7 +55,7 @@ of web applications.
 
 However, it would be criminal indeed not to benefit from Meteor's reactive publications. Now, React and Redux already
 provide us with reactivity, we just need a way to link up our Redux store with a Meteor publication. SSRWPO provides helper
-functions to do exactly this: `createHandleSubscribe` and `createHandleSyncViaMethod`
+functions to do exactly this: `createHandleSubscribe` and `createHandleSyncViaMethod`.
 
 Here's and example where we create a function to start subscribing to a publication. Note how we do this in the
 `connect`:
