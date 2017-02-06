@@ -57,37 +57,4 @@ However, it would be criminal indeed not to benefit from Meteor's reactive publi
 provide us with reactivity, we just need a way to link up our Redux store with a Meteor publication. SSRWPO provides helper
 functions to do exactly this: `createHandleSubscribe` and `createHandleSyncViaMethod`.
 
-Here's and example where we create a function to start subscribing to a publication. Note how we do this in the
-`connect`:
-
-````js
-export default connect(
-  state => ({
-    buildDate: state.buildDate,
-    PubSubStore: state.MyMeteorPublicationInAStore,
-    isMyMeteorPublicationSubscribed: state.isMyMeteorPublicationSubscribed,
-  }),
-
-  dispatch => ({
-    handleSubscribe: createHandleSubscribe(
-      dispatch,
-      'publicationName',
-      MyMeteorPublication.find(),
-      'isMyMeteorPublicationSubscribed',
-      'MyMeteorPublicationInAStore',
-    )
-  }),
-)(MyComponent);
-````
-
-In this example `MyComponent` can call `handleSubscribe` to subscribe to the `publicationName` publication. All the changes
-from the database since the page was rendered on the server will be pulled into the corresponding Redux store, and
-and an observer will be set up to update the Redux Store every time there's a change in the underlying publication.
-As the store updates, so will your component.
-
-Another powerful option is to use the `createHandleSyncViaMethod` helper, which will create a function that will perform
-a one-off synchronisation of the Redux store on-demand. This gives us reactivity-on-demand and can be used to significantly
-save on server bandwidth compared to traditional Meteor subscriptions.
-
-Of course there's nothing to stop you using traditional Meteor publications and subscriptions as long as you don't need
-SSR for the pages concerned.
+Take a look at [Meteor Collections](../meteor-collections/) for more information.

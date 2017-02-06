@@ -85,4 +85,4 @@ meteor run --production
 ````
 
 Note also that calling `resetSSRCache` will **not** reset the component cache. This means that even
-if you have to reset your page cache, you won't lose hard hard-earned component caches.
+if you have to reset your page cache, you won't lose those hard-earned component caches.
