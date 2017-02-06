@@ -9,7 +9,6 @@ docPages = [
   "/ssr/SSR/",
   "/ssr/caching/",
   "/ssr/server-side-routes/",
-  "/ssr/webhooks/",
   "/ssr/reducers/",
   "/ssr/hocs/",
   "/ssr/meteor-collections/",

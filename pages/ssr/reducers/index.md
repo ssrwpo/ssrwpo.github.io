@@ -43,12 +43,12 @@ refer to the following sources for inspiration:
 * [`platformTransformers`](https://github.com/ssr-server/ssr/blob/master/server/utils/platformTransformers.js).
 * [`<BrowserStats />`](https://github.com/ssr-server/ssr/blob/master/shared/components/BrowserStats.jsx)
 
-### Build date
+## Build date
 
 Each produced HTML payload is tagged with a build date which is used when synchronising
 data from the server. The reducer is named `buildDate` and it contains a UNIX date.
 
-### Reducer helpers
+## Reducer helpers
 
 We also export some helpers which will create reducers for you:
 

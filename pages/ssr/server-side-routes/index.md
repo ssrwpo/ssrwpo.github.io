@@ -51,3 +51,8 @@ and by setting into it a `has404` boolean used by the server to identify the rou
 as `404` Not found route.
 
 Example: [NotFound](https://github.com/ssr-server/ssr/blob/master/demo/imports/routes/NotFound.jsx)
+
+## Web hooks
+
+By passing a `webhooks` object, you can build your own server side routes powered
+by Express. A small example is setup in the [demo](https://github.com/ssr-server/ssr/blob/master/demo/server/webhooks.js).

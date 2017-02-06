@@ -16,7 +16,8 @@ method that will synchronize your collection store.
 
 The subscribe / unsubscribe based synchronization helper will create a function that:
 
-* pulls all the changes from the last render into the corresponding Redux store
+* pulls all the changes from the the time the page was rendered on the server
+  into the corresponding Redux store.
 * observes the Meteor publication and update the Redux Store every time there's a change.
 
 Your component will therefore update when the store changes.
