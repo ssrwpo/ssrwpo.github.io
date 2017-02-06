@@ -45,10 +45,10 @@ globalCollections.forEach((collection) => {
 
 ## Component level caching
 
-If you wish to squeeze the absolute best performance our of you server, you may also
+If you wish to squeeze the absolute best performance out of your server, you may also
 choose to cache individual react components. We use
 [electrode-react-ssr-caching](https://github.com/electrode-io/electrode-react-ssr-caching)
-for this purpose, and you should the project's own documentation.
+for this purpose, and you should the read the project's own documentation.
 
 Note that `electrode-react-ssr-caching` requires us to supply an object containing
 the component cache strategies for every component that you wish to cache.
@@ -84,5 +84,5 @@ to test this feature:
 meteor run --production
 ````
 
-Note that calling `resetSSRCache` will **not** reset the component cache. This means that even
+Note also that calling `resetSSRCache` will **not** reset the component cache. This means that even
 if you have to reset your page cache, you won't lose hard hard-earned component caches.
