@@ -1,17 +1,21 @@
 ---
-title: Installation
+title: Description
 ---
 
-### Installation in your own project
+**SSR** is a [Meteor](https://www.meteor.com) package which adds a number of extremely desirable features:
 
-You can replace yarn by your favorite way of installing NPM packages.  
-To install yarn : https://yarnpkg.com/en/docs/install  
-To install "meteor yarn" : ```meteor npm i -g yarn```  
+* Server Side Rendering with a true TTL cache
+* Data injection for the initial render on client
+* Server-side routes and webhooks
+* A Redux layer over Meteor publications to provide reactively as and when required
+* Internationalisation
+* Server-side redirects and 404 handing
+* Support for Sitemaps and robots.txt files
 
-```sh
-meteor yarn add react react-dom react-router-dom@4.0.0-beta.3 express helmet \
-  react-helmet winston logatim receptacle useragent redux react-redux moment \
-  react-intl react-intl-redux lodash actual url-pattern \
-  electrode-react-ssr-caching
-meteor add ssrwpo:ssr
-```
+Unlike existing solutions, SSRWPO doesn't monkey patch Meteor to provide this functionality. Instead,
+SSRWPO is based around a set of standard web technologies:
+
+* [Express](expressjs.com/)
+* [React](https://facebook.github.io/react/)
+* [React-Router 4](https://reacttraining.com/react-router/)
+* [Redux](redux.js.org)
