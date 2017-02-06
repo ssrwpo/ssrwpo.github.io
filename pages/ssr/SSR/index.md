@@ -110,7 +110,7 @@ export default connect(
 Note that since `isPubSubInitialised` is a store value it will be sent to the client, so
 the client will know if the data has already been initialised on the server.
 
-This is clean and simple solution, and it's ideal for ay use cases. However, there are two caveats:
+This is clean and simple solution, and it's ideal for many use cases. However, there are two caveats:
 
 * The data must be available **synchronously**.
 * The prepared store data won't be available to the component itself via the property passed using
@@ -130,7 +130,7 @@ rendering the component. The function is passed store and the current
 * A `Promise` that will prepare the store asynchronously. In this case server will wait for the Promise
   to return before continuing, allowing you to include data from asynchronous sources.
 
-The key difference with this approach replies on a subtlety that **very important to understand**
+The key difference with this approach relies on a subtlety that is **very important to understand**.
 Let's take this example:
 
 ````javascript
@@ -193,7 +193,7 @@ Using `prepareStore` will ensure that the store is ready for server-side renderi
 store in the HTML payload so that it's already available on the client.
 
 But what happens if we actually rendered a different route on the server, and afterwards we move to the route
-containing `MyComponent`. In this case we'll need return to the classic use-case, and we'll need to
+containing `MyComponent`? In this case we'll need return to the classic use-case, and we'll need to
 initialise the store on the client. Here, for example, we'll update the store using a method helper:
 
 ````javascript
