@@ -25,7 +25,7 @@ settings the expected log level. Available values:
 
 * **`debug`** Debugging and performance.
 * **`info`** (default) Informations.
-* **`warning`** Warnings and deprecation messages.
+* **`warn`** Warnings and deprecation messages.
 * **`error`** Errors.
 
 ### Recommended Babel configuration
