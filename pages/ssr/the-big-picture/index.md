@@ -55,6 +55,6 @@ of web applications.
 
 However, it would be criminal indeed not to benefit from Meteor's reactive publications. Now, React and Redux already
 provide us with reactivity, we just need a way to link up our Redux store with a Meteor publication. SSRWPO provides helper
-functions to do exactly this: `createHandleSubscribe` and `createHandleSyncViaMethod`.
+functions to do exactly this: `createToggleSubscribe` and `createHandleSyncViaMethod`.
 
 Take a look at [Meteor Collections](../meteor-collections/) for more information.
