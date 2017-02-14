@@ -23,15 +23,12 @@ function jsxify(str) {
   // <div>{'foo'}<span>{'bar'}</span>{'foo'}<span>{'bar'}</span>{'foo'}</div>
 
   const wrapped = `<div>${str}</div>`;
-  const jsxified = wrapped.replace(/(<[^>]*>)([\S\s]*?)(?=<[^>]*>)/g, '$1{`$2`}');
-
-  // The code has already had non-html characters converted to entities, but this
-  // these strings are now inside the react components, we need to decode them
-
-  return decode(jsxified);
+  return wrapped.replace(/(<[^>]*>)([\S\s]*?)(?=<[^>]*>)/g, '$1{`$2`}');
 }
 
 var highlight = function (str, lang) {
+
+
 
   // Since the markdown is passed through markdown-it-jsx, the
   // blocks will be between {` ... `}
@@ -69,7 +66,7 @@ var md = markdownIt({
 module.exports = function (content) {
   this.cacheable()
   const meta = frontMatter(content)
-  let body = md.render(meta.body)
+  let body = decode(md.render(meta.body));
 
   // Since the markdown is passed through markdown-it-jsx, what we have
   // back is now a React component string that we need to render...

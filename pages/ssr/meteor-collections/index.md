@@ -21,20 +21,18 @@ The subscribe / unsubscribe based synchronization helper will create a function 
 
 Your component will therefore update when the store changes.
 
-```js
-/**
- * `createToggleSubscribe`
- * Create an `handleSubscribe` function for your `mapDispatchToProps`.
- * @param dispatch Store's dispatch.
- * @param publicationName Your publication name
- * @param cursor A cursor for the Mongo collection to synchronise
- * @param valueStoreNameForSubscription  Name of the value store with
-          subscription state (true => subscribed, false => not subscribed).
- * @param collectionStoreName Name of the collection store holding
-          replica of collection.
- * @return A function toggle the current subscription state.
- */
-```
+<FunctionDefinition
+  name="createToggleSubscribe"
+  desc="Create an handleSubscribe function for your mapDispatchToProps."
+  params={[
+      { name: 'dispatch', desc: 'Store\'s dispatch' },
+      { name: 'publicationName', desc: 'Your publication name' },
+      { name: 'cursor', desc: 'A cursor for the Mongo collection to synchronise' },
+      { name: 'valueStoreNameForSubscription', desc: 'Name of the value store with subscription state (true => subscribed, false => not subscribed).' },
+      { name: 'collectionStoreName', desc: 'Name of the collection store holding replica of collection' }
+  ]}
+  returns="A function toggle the current subscription state."
+/>
 
 #### Via validated method: `createHandleSyncViaMethod`
 
@@ -43,21 +41,16 @@ a Meteor publication on-demand by replacing the current store data with that
 returned by the method. This gives us reactivity-on-demand and can be used to significantly
 save on server bandwidth compared to traditional Meteor subscriptions.
 
-```js
-/**
- * `createHandleSyncViaMethod`
- * Create an `handleSyncViaMethod` function for your
-   `mapDispatchToProps`.
- * @param dispatch Store's dispatch.
- * @param validatedMethod A validated method which returns the entire
-          collection to be synced.
- * @param collectionStoreName Name of the collection store holding
-          replica of collection.
- * @return A function which takes the store and the parameters to send
-           to the validated method, and which synchronizes the store with the
-           collection return by the method.
- */
-```
+<FunctionDefinition
+  name="createHandleSyncViaMethod"
+  desc="Creates a handleSyncViaMethod function for your mapDispatchToProps."
+  params={[
+      { name: 'dispatch', desc: 'Store\'s dispatch' },
+      { name: 'validatedMethod', desc: 'A validated method which returns the entire collection to be synced.' },
+      { name: 'collectionStoreName', desc: 'Name of the collection store holding replica of collection.' },
+  ]}
+  returns="A function which takes the store and the parameters to send to the validated method, and which synchronizes the store with the       collection return by the method."
+/>
 
 Here's and example where we create a function to start subscribing to a publication. Note how we do this in the
 `connect`:

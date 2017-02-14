@@ -31,6 +31,7 @@ It only applies to server side rendering. When your client side app is rendered,
 the default values that the server has injected with a built-in component:
 
 `<BrowserStats retinaMinDpi={<number>} mobileBreakpoint={<number>} debounceTimer={<number>} />`
+
 where :
 
 * `retinaMinDpi`: 144, by default (1.5 x 96 in dpi).
