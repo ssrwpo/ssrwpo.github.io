@@ -219,7 +219,7 @@ babel-code-frame@^6.11.0, babel-code-frame@^6.16.0, babel-code-frame@^6.22.0:
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-babel-core@^6.13.2, babel-core@^6.18.2, babel-core@^6.22.0:
+babel-core@^6.13.2, babel-core@^6.18.2, babel-core@^6.22.0, babel-core@^6.22.1:
   version "6.22.1"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.22.1.tgz#9c5fd658ba1772d28d721f6d25d968fc7ae21648"
   dependencies:
@@ -1742,6 +1742,10 @@ debug@~2.2.0:
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2, decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
+
+decode-html@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/decode-html/-/decode-html-1.0.2.tgz#0a6926204d266122518b822f0dd0f405bb92cce9"
 
 decompress-tar@^3.0.0:
   version "3.1.0"
@@ -3837,6 +3841,12 @@ markdown-it-footnote@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/markdown-it-footnote/-/markdown-it-footnote-3.0.1.tgz#7f3730747cacc86e2fe0bf8a17a710f34791517a"
 
+markdown-it-jsx@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-jsx/-/markdown-it-jsx-1.1.0.tgz#3530292bf307fa071bff786e977f6047e0a55042"
+  dependencies:
+    parsimmon "^1.2.0"
+
 markdown-it-sub@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it-sub/-/markdown-it-sub-1.0.0.tgz#375fd6026eae7ddcb012497f6411195ea1e3afe8"
@@ -4372,6 +4382,10 @@ parse-passwd@^1.0.0:
 parse-unit@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/parse-unit/-/parse-unit-1.0.1.tgz#7e1bb6d5bef3874c28e392526a2541170291eecf"
+
+parsimmon@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/parsimmon/-/parsimmon-1.2.0.tgz#3ed4ae6c8913066969f3faeafe39961fdcadf399"
 
 path-browserify@0.0.0:
   version "0.0.0"
@@ -5158,7 +5172,7 @@ react-document-title@^2.0.1, react-document-title@^2.0.2:
   dependencies:
     react-side-effect "^1.0.2"
 
-react-dom@^15.4.1:
+react-dom@^15.4.1, react-dom@^15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.4.2.tgz#015363f05b0a1fd52ae9efdd3a0060d90695208f"
   dependencies:
@@ -5260,7 +5274,7 @@ react-typography@^0.15.0:
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.15.0.tgz#0c7680bcbb12a681950c2187df66c43aa4b02034"
 
-react@^15.4.1:
+react@^15.4.1, react@^15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.4.2.tgz#41f7991b26185392ba9bae96c8889e7e018397ef"
   dependencies:
